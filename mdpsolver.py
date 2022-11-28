@@ -78,8 +78,6 @@ class MDPMutation(Mutation):
             is_true = np.where(X[i, :])[0]
             X[i, np.random.choice(is_false)] = True
             X[i, np.random.choice(is_true)] = False
-            X[i, np.random.choice(is_false)] = True
-            X[i, np.random.choice(is_true)] = False
 
         return X
 
